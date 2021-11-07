@@ -1,0 +1,89 @@
+@import "variables/utils";
+
+
+  body {
+  margin: 0;
+  padding: 0;
+}
+
+  * {
+  margin: 0;
+  padding: 0;
+}
+
+  .main {
+    margin: 0 auto;
+    background-color: #cce9f8;
+    padding-bottom: 400px;
+    width: 100%;
+    max-width: 1920px;
+    font-family: "Helvetica Neue";
+  }
+
+
+  .fon {
+    background: url("../img/Rectangle 1.png")center top no-repeat;
+    position: absolute;
+    width: 1440px;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background-size: cover;
+  }
+
+  .head {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+
+    &__snake {
+      margin-bottom: 150px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__vector {
+      display: flex;
+    }
+
+    &__logo {
+      margin-top: 26px;
+    }
+
+    &__name {
+      margin-top: 39px;
+      margin-left: 16px;
+      font-weight: 400;
+    }
+
+    &__menu {
+      margin-top: 44px;
+    }
+
+    &__list {
+      display: flex;
+      list-style-type: none;
+    }
+
+    &__link {
+      margin-right: 30px;
+
+      &:nth-child(4) {
+        margin-right: 0;
+      }
+    }
+
+    &__item {
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    &__title {
+      font-size: 62px;
+      text-align: center;
+      font-weight: 200;
+      font-family: "Helvetica Neue";
+      text-transform: uppercase;
+    }
+  }
