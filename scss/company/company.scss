@@ -1,0 +1,29 @@
+
+
+
+  .company {
+    display: flex;
+
+    &__img {
+      width: 100%;
+      max-width: 720px;
+      height: 100vh;
+    }
+
+    &__text {
+      margin: 150px 200px 0 140px;
+      font-family: "Helvetica Neue";
+      text-align: right;
+    }
+
+    &__title {
+      font-size: 45px;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+
+    &__word {
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+  }

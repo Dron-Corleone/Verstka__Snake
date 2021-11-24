@@ -1,4 +1,7 @@
 @import "variables/utils";
+@import "company/company";
+@import "portfolio/portfolio";
+@import "category/category";
 
 
   body {
@@ -13,8 +16,7 @@
 
   .main {
     margin: 0 auto;
-    background-color: #cce9f8;
-    padding-bottom: 400px;
+    background-color: #dcf1fc;
     width: 100%;
     max-width: 1920px;
     font-family: "Helvetica Neue";
@@ -23,11 +25,8 @@
 
   .fon {
     background: url("../img/Rectangle 1.png")center top no-repeat;
-    position: absolute;
     width: 1440px;
     height: 100vh;
-    left: 0px;
-    top: 0px;
     background-size: cover;
   }
 

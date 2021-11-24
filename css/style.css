@@ -1,3 +1,74 @@
+.company {
+  display: flex;
+}
+.company__img {
+  width: 100%;
+  max-width: 720px;
+  height: 100vh;
+}
+.company__text {
+  margin: 150px 200px 0 140px;
+  font-family: "Helvetica Neue";
+  text-align: right;
+}
+.company__title {
+  font-size: 45px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.company__word {
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.portfolio {
+  text-align: center;
+  background-color: white;
+  padding-top: 100px;
+  font-family: "Helvetica Neue";
+}
+.portfolio__title {
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 70px;
+}
+.portfolio__img {
+  width: 100%;
+  max-width: 720px;
+  position: relative;
+}
+.portfolio__button {
+  width: 100%;
+  max-width: 150px;
+  height: 34px;
+  position: absolute;
+  right: 370px;
+  margin-top: 96px;
+  background: none;
+  border: 1px solid black;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: 0.4s;
+}
+.portfolio__button:hover {
+  background-color: #e7f1ff;
+  color: black;
+}
+
+.category {
+  background-color: #1A1F25;
+  padding-bottom: 300px;
+  text-align: center;
+  font-family: "Helvetica Neue";
+}
+.category__title {
+  font-size: 35px;
+  font-weight: 300;
+  color: #eaeffa;
+  padding-top: 50px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,8 +81,7 @@ body {
 
 .main {
   margin: 0 auto;
-  background-color: #cce9f8;
-  padding-bottom: 400px;
+  background-color: #dcf1fc;
   width: 100%;
   max-width: 1920px;
   font-family: "Helvetica Neue";
@@ -19,11 +89,8 @@ body {
 
 .fon {
   background: url("../img/Rectangle 1.png") center top no-repeat;
-  position: absolute;
   width: 1440px;
   height: 100vh;
-  left: 0px;
-  top: 0px;
   background-size: cover;
 }
 

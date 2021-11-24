@@ -1,0 +1,42 @@
+
+
+  .game {
+    text-align: center;
+
+    &__title {
+      font-family: "Helvetica Neue";
+      font-size: 50px;
+      font-weight: 300;
+    }
+
+    input[type='checkbox'] {
+      display: none;
+    }
+
+    &__popup {
+      display: none;
+      width: 400px;
+      height: 200px;
+      background: antiquewhite;
+      position: absolute;
+      margin: 0 auto;
+      padding-bottom: 15px;
+    }
+  }
+
+  label {
+    display: inline-block;
+    color: #cce9f8;
+    font-weight: 400;
+    background: aqua;
+    border-radius: 5px;
+    padding: 15px 30px;
+  }
+
+  input:checked ~ .game__popup {
+    display: block;
+    background: white;
+    width: 360px;
+    height: 270px;
+    margin: 10px 0 0 -110px;
+  }

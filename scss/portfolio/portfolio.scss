@@ -1,0 +1,40 @@
+
+
+  .portfolio {
+    text-align: center;
+    background-color: white;
+    padding-top: 100px;
+    font-family: "Helvetica Neue";
+
+    &__title {
+      font-size: 35px;
+      font-weight: 300;
+      margin-bottom: 70px;
+    }
+
+    &__img {
+      width: 100%;
+      max-width: 720px;
+      position: relative;
+    }
+
+    &__button {
+      width: 100%;
+      max-width: 150px;
+      height: 34px;
+      position: absolute;
+      right: 370px;
+      margin-top: 96px;
+      background: none;
+      border: 1px solid black;
+      color: black;
+      text-transform: uppercase;
+      font-weight: 300;
+      transition: 0.4s;
+
+      &:hover {
+        background-color: #e7f1ff;
+        color: black;
+      }
+    }
+  }

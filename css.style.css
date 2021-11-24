@@ -1,0 +1,106 @@
+.game {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.game input[type=checkbox] {
+  display: none;
+}
+.game__popup {
+  display: none;
+  width: 400px;
+  height: 200px;
+  background: #cce9f8;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+.game label {
+  display: inline-block;
+  color: #F1F1F1;
+  font-weight: 400;
+  background: black;
+  border-radius: 5px;
+  padding: 15px 30px;
+}
+input:checked ~ .game__popup {
+  display: block;
+  background: white;
+  width: 360px;
+  height: 270px;
+  margin: 10px 0 0 -110px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  margin: 0 auto;
+  background-color: #cce9f8;
+  padding-bottom: 200px;
+  width: 100%;
+  max-width: 1920px;
+  font-family: "Helvetica Neue";
+}
+
+.fon {
+  background: url("../img/Rectangle 1.png") center top no-repeat;
+  width: 1440px;
+  height: 100vh;
+  background-size: cover;
+  margin-bottom: 100px;
+}
+
+.head {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.head__snake {
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.head__vector {
+  display: flex;
+}
+.head__logo {
+  margin-top: 26px;
+}
+.head__name {
+  margin-top: 39px;
+  margin-left: 16px;
+  font-weight: 400;
+}
+.head__menu {
+  margin-top: 44px;
+}
+.head__list {
+  display: flex;
+  list-style-type: none;
+}
+.head__link {
+  margin-right: 30px;
+}
+.head__link:nth-child(4) {
+  margin-right: 0;
+}
+.head__item {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+.head__title {
+  font-size: 62px;
+  text-align: center;
+  font-weight: 200;
+  font-family: "Helvetica Neue";
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=css.style.css.map */
