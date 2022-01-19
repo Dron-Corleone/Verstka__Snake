@@ -1,0 +1,164 @@
+
+.card {
+  font-family: "Helvetica Neue";
+  display: flex;
+
+  &__background {
+    background: url("../../img/Rectangle 4.png") center top no-repeat;
+    width: 690px;
+    height: 100vh;
+    background-size: cover;
+  }
+
+  &__title {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 35px;
+    color: white;
+    font-weight: 320;
+    margin-bottom: 100px;
+  }
+
+  &__data {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__word {
+    color: white;
+    font-size: 16px;
+    font-weight: 360;
+    margin-left: 286px;
+  }
+
+  &__input {
+    margin-left: 286px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    color: white;
+    width: 330px;
+    margin-bottom: 40px;
+    line-height: 10px;
+
+    &--active {
+      line-height: 60px;
+    }
+  }
+
+  &__button {
+    background: none;
+    border: 1px solid white;
+    width: 150px;
+    height: 35px;
+    color: white;
+    margin-left: 286px;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: white;
+      color: #1A1F25;
+    }
+  }
+
+  &__position {
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+  }
+
+  &__button-text {
+    margin-right: 36px;
+  }
+
+  &__arrow-right {
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    margin: 3px 0 0 70px;
+    transform: rotate(45deg);
+    position: absolute;
+    transition: 0.2s;
+
+    &:hover {
+      width: 8px;
+      height: 8px;
+      border-top: 2px solid #1A1F25;
+      border-right: 2px solid #1A1F25;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__offers {
+    background-color: #1A1F25;
+    width: 100%;
+    max-width: 750px;
+  }
+
+  &__display {
+    display: flex;
+    margin-left: 50px;
+  }
+
+  &__conteiner {
+    width: 100%;
+    max-width: 194px;
+    position: relative;
+    transition: all 0.8s ease 0s;
+    transform-style: preserve-3d;
+    margin-left: 20px;
+  }
+
+  &__block--front,
+  &__block--back {
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    max-width: 190px;
+    height: 260px;
+    display: block;
+    backface-visibility: hidden;
+  }
+
+
+  &__block--front {
+    border: 1px solid white;
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+
+
+  &__block--back {
+    border: 1px solid #1c536b;
+    background-color: #1c536b;
+    transform: rotateY(180deg);
+    color: black;
+  }
+
+  &__conteiner:hover {
+    transform: rotateY(180deg);
+  }
+
+  &__block--title {
+    color: white;
+    font-weight: 320;
+    margin: 60px 20px;
+  }
+
+  &__block--text {
+    color: white;
+    font-weight: 320;
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  &__block-word {
+    padding-bottom: 20px;
+    font-size: 24px;
+  }
+
+}

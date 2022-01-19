@@ -2,87 +2,118 @@
 @import "company/company";
 @import "portfolio/portfolio";
 @import "category/category";
+@import "advantages/advantages";
+@import "card/card";
+@import "footer/footer";
 
 
-  body {
+body {
   margin: 0;
   padding: 0;
 }
 
-  * {
+* {
   margin: 0;
   padding: 0;
 }
 
-  .main {
-    margin: 0 auto;
+.main {
+  margin: 0 auto;
+  background-color: #dcf1fc;
+  width: 100%;
+  max-width: 1920px;
+  font-family: "Helvetica Neue";
+}
+
+
+.fon {
+  background: url("../img/Rectangle 1.png") center top no-repeat;
+  width: 1440px;
+  height: 100vh;
+  background-size: cover;
+}
+
+.head {
+  width: 100%;
+  max-width: 900px;
+
+  &__snake {
+    margin-bottom: 150px;
+    padding-left: 270px;
+    display: flex;
+    position: fixed;
+  }
+
+  &__fixedMenu {
     background-color: #dcf1fc;
+    opacity: 0.7;
     width: 100%;
-    max-width: 1920px;
+    z-index: 3;
+    line-height: 35px;
+  }
+
+  &__vector {
+    display: flex;
+  }
+
+  &__logo {
+    margin-top: 26px;
+  }
+
+  &__logo-small {
+    margin-top: 10px;
+    width: 35px;
+    height: 29px;
+  }
+
+  &__name {
+    margin: 39px 0 0 12px;
+    font-weight: 400;
+  }
+
+  &__name-small {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  &__menu {
+    margin: 44px 0 0 200px;
+  }
+
+  &__menu-small {
+    margin: 9px 0 0 200px;
+  }
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__link {
+    margin-right: 16px;
+
+    &:nth-child(6) {
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.2s;
+
+    &:hover {
+      color: #1c536b;
+    }
+  }
+
+  &__title {
+    font-size: 62px;
+    text-align: center;
+    font-weight: 200;
     font-family: "Helvetica Neue";
+    text-transform: uppercase;
+    padding-top: 250px;
   }
-
-
-  .fon {
-    background: url("../img/Rectangle 1.png")center top no-repeat;
-    width: 1440px;
-    height: 100vh;
-    background-size: cover;
-  }
-
-  .head {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-
-    &__snake {
-      margin-bottom: 150px;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    &__vector {
-      display: flex;
-    }
-
-    &__logo {
-      margin-top: 26px;
-    }
-
-    &__name {
-      margin-top: 39px;
-      margin-left: 16px;
-      font-weight: 400;
-    }
-
-    &__menu {
-      margin-top: 44px;
-    }
-
-    &__list {
-      display: flex;
-      list-style-type: none;
-    }
-
-    &__link {
-      margin-right: 30px;
-
-      &:nth-child(4) {
-        margin-right: 0;
-      }
-    }
-
-    &__item {
-      color: black;
-      text-decoration: none;
-      font-size: 18px;
-    }
-
-    &__title {
-      font-size: 62px;
-      text-align: center;
-      font-weight: 200;
-      font-family: "Helvetica Neue";
-      text-transform: uppercase;
-    }
-  }
+}

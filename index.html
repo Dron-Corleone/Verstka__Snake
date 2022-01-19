@@ -5,46 +5,255 @@
     <title>Game Snake</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <main class="main">
-            <section class="fon">
-                <div class="head">
-                    <div class="head__snake">
-                        <div class="head__vector">
-                            <img class="head__logo" src="img/Vector.png">
-                            <h2 class="head__name">Snake</h2>
+<body id="home">
+<main class="main">
+    <section class="fon">
+        <div class="head">
+            <div class="head__snake">
+                <div class="head__vector">
+                    <img class="head__logo" src="img/Vector.png" alt="logo">
+                    <h2 class="head__name">Snake</h2>
+                </div>
+                    <div class="head__menu">
+                        <ul class="head__list">
+                            <li class="head__link"><a class="head__item" href="#home">Home</a></li>
+                            <li class="head__link"><a class="head__item" href="#company">About company</a></li>
+                            <li class="head__link"><a class="head__item" href="#portfolio">Portfolio</a></li>
+                            <li class="head__link"><a class="head__item" href="#catetegories">Categories</a></li>
+                            <li class="head__link"><a class="head__item" href="#advantages">Our Advantages</a></li>
+                            <li class="head__link"><a class="head__item" href="#card">Card</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <h1 class="head__title">web applications</h1>
+    </section>
+    <section class="company" id="company">
+        <img class="company__img" src="img/Rectangle%202.png" alt="company">
+        <div class="company__text">
+            <h2 class="company__title" >О компании</h2>
+            <p class="company__word">Мы диджитал агентство занимаемся полным циклом продвижения компаний в
+                интернете.</p>
+            <p class="company__word">Разработка сайтов – Сделаем уникальный дизайн согласно вашему фирменному стилю.
+                Напишем чистый код, без использования конструкторов.</p>
+            <p class="company__word">Продвижение – поможем вам быстро добиться желаемого результата, обеспечим
+                постоянный приток новых заявок.</p>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">Portfolio</h2>
+        <img class="portfolio__img" src="img/f_9936163de18b3599%201.png" alt="hy..">
+        <button class="portfolio__button">Get Site</button>
+    </section>
+    <section class="category" id="category">
+        <h2 class="category__title">Categories</h2>
+        <div class="category__gallery">
+            <div class="category__border">
+                <div class="category__border-vertical"></div>
+                <div class="category__border-verticalOne"></div>
+                <div class="category__border-verticalTwo"></div>
+                <div class="category__border-verticalThree"></div>
+                <div class="category__gallery-flex">
+                    <div class="category__block">
+                        <img class="category__block--img" src="img/1.png" alt="logo">
+                        <p>High level of performance</p>
+                    </div>
+                    <div class="category__block">
+                        <img class="category__block--img" src="img/2.png" alt="logo">
+                        <p>We guarantee the quality of work</p>
+                    </div>
+                    <div class="category__block">
+                        <img class="category__block--img" src="img/3.png" alt="logo">
+                        <p>Let's get the job done quickly</p>
+                    </div>
+                    <div class="category__block">
+                        <img class="category__block--img" src="img/4.png" alt="logo">
+                        <p>We will provide a flow of applications</p>
+                    </div>
+                    <div class="category__block">
+                        <img class="category__block--img" src="img/5.png" alt="logo">
+                        <p>We automate work</p>
+                    </div>
+                </div>
+                <div class="category__border-gorizont"></div>
+                <div class="category__gallery-flex">
+                    <div class="category__block--active">
+                        <img class="category__block--img" src="img/6.png" alt="logo">
+                        <p>We will develop a unique design</p>
+                    </div>
+                    <div class="category__block">
+                        <img class="category__block--img" src="img/7.png" alt="logo">
+                        <p>Let's write clean
+                            code</p>
+                    </div>
+                    <div class="category__block">
+                        <img class="category__block--img" src="img/8.png" alt="logo">
+                        <p>Contextual
+                            advertising</p>
+                    </div>
+                    <div class="category__block">
+                        <img class="category__block--img" src="img/9.png" alt="logo">
+                        <p>Treacherous advertising</p>
+                    </div>
+                    <div class="category__block">
+                        <img class="category__block--img" src="img/10.png" alt="logo">
+                        <p>SEO promotion</p>
+                    </div>
+                </div>
+                <div class="category__border-gorizont"></div>
+                <div class="category__gallery-flexButton">
+                    <div class="category__block">
+                        <img class="category__block--img" src="img/11.png" alt="logo">
+                        <p>SEO promotion</p>
+                    </div>
+                    <a class="category__button" href="https://developer.mozilla.org/ru/docs/Web/CSS/text-align">More Details</a>
+                    <div class="category__block-position">
+                        <img class="category__block--img" src="img/12.png" alt="logo">
+                        <p>SEO promotion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages" id="advantages">
+        <h2 class="advantages__title">Our Advantages</h2>
+        <div class="advantages__container">
+            <div class="advantages__container--block">
+                <img class="advantages__container--img" src="img/award%201.png">
+                <p class="advantages__container--text">We will make a responsive design for any type of device</p>
+            </div>
+            <div class="advantages__container--block">
+                <img class="advantages__container--img" src="img/award%201%20(1).png">
+                <p class="advantages__container--text">We will install analytics counters on the site and configure the
+                    ability to track results directly from your mobile phone</p>
+            </div>
+            <div class="advantages__container--block">
+                <img class="advantages__container--img" src="img/award%201%20(2).png">
+                <p class="advantages__container--text">We will set up all possible ways of feedback. Mail requests,
+                    connect an online consultant, set up a phone call from the site, connect Whatsapp to the site</p>
+            </div>
+            <div class="advantages__container--block">
+                <img class="advantages__container--img" src="img/award%201%20(3).png">
+                <p class="advantages__container--text">We will analyze your industry and competitors, offer the best
+                    tools for online promotion</p>
+            </div>
+        </div>
+    </section>
+    <section class="card" id="card">
+        <div class="card__background">
+            <h2 class="card__title">Request</h2>
+            <div class="card__data">
+                <p class="card__word">Name</p>
+                <input class="card__input" type="text">
+                <p class="card__word">Email</p>
+                <input class="card__input" type="text">
+                <p class="card__word">Message</p>
+                <input class="card__input card__input--active" type="text">
+            </div>
+            <button class="card__button">
+                <div class="card__position">
+                    <p class="card__button-text">Send</p>
+                    <div class="card__arrow-right"></div>
+                </div>
+            </button>
+        </div>
+        <div class="card__offers">
+            <h2 class="card__title">Special offers</h2>
+            <div class="card__display">
+                <div class="card__conteiner">
+                    <div class="card__block--front">
+                        <h2 class="card__block--title">Landing Page</h2>
+                    </div>
+                    <div class="card__block--back">
+                        <div class="card__block--text">
+                            <p class="card__block-word">selling landing page.</p>
+                            <del>200000$</del>
+                            <p>100000$</p>
                         </div>
-                        <nav class="head__menu">
-                            <ul class="head__list">
-                                <li class="head__link"><a class="head__item" href="#">Home</a></li>
-                                <li class="head__link"><a class="head__item" href="#">Snake Game</a></li>
-                                <li class="head__link"><a class="head__item" href="#">Categories</a></li>
-                                <li class="head__link"><a class="head__item" href="#">Blog</a></li>
-                            </ul>
-                        </nav>
                     </div>
                 </div>
-                    <h1 class="head__title">web applications</h1>
-            </section>
-            <section class="company">
-                    <img class="company__img" src="img/Rectangle%202.png">
-                    <div class="company__text">
-                        <h2 class="company__title">О компании</h2>
-                        <p class="company__word">Мы диджитал агентство занимаемся полным циклом продвижения компаний в интернете.</p>
-                        <p class="company__word">Разработка сайтов – Сделаем уникальный дизайн согласно вашему фирменному стилю. Напишем чистый код, без использования конструкторов.</p>
-                        <p class="company__word">Продвижение – поможем вам быстро добиться желаемого результата, обеспечим постоянный приток новых заявок.</p>
+                <div class="card__conteiner">
+                    <div class="card__block--front">
+                        <h2 class="card__block--title">Landing Page</h2>
                     </div>
-            </section>
-            <section class="portfolio">
-                <h2 class="portfolio__title">Portfolio</h2>
-                <img class="portfolio__img" src="img/f_9936163de18b3599%201.png">
-                <button class="portfolio__button">Get Site</button>
-            </section>
-            <section class="category">
-                <div class="category__block">
+                    <div class="card__block--back">
+                        <div class="card__block--text">
+                            <p class="card__block-word">selling landing page.</p>
+                            <del>200000$</del>
+                            <p>100000$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__conteiner">
+                    <div class="card__block--front">
+                        <h2 class="card__block--title">Landing Page</h2>
+                    </div>
+                    <div class="card__block--back">
+                        <div class="card__block--text">
+                            <p class="card__block-word">selling landing page.</p>
+                            <del>200000$</del>
+                            <p>100000$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer__conteiner">
+            <div class="footer__block">
+                <h2 class="footer__title">Point</h2>
+                <p>In our quest to improve the user experience, we are missing out on many well-known personalities.</p>
+                <p>Point</p>
+                <p>Point</p>
+            </div>
+            <div class="footer__block">
+                <h2 class="footer__title">Point</h2>
+                <p>In our quest to improve the user experience, we are missing out on many well-known personalities.</p>
+                <p>Point</p>
+                <p>Point</p>
+            </div>
+            <div class="footer__block">
+                <h2 class="footer__title">Point</h2>
+                <p>In our quest to improve the user experience, we are missing out on many well-known
+                    personalities.</p>
+                <p>Point</p>
+                <p>Point</p>
+            </div>
+            <div class="footer__block">
+                <h2 class="footer__title">Contact</h2>
+                <div class="footer__block-icon">
+                    <img class="footer__block-img" src="img/Vector%20(1).png" alt="icon">
+                    <p>Number</p>
+                </div>
+                <div class="footer__block-icon">
+                    <img class="footer__block-img" src="img/Vector%20(3).png" alt="icon">
+                    <img class="footer__block-imgV" src="img/Vector%20(5).png">
+                    <p>email@email.com</p>
+                </div>
+                <div class="footer__block-icon">
+                    <img class="footer__block-img" src="img/Vector%20(2).png" alt="icon">
+                    <img class="footer__block-imgOne" src="img/Vector%20(4).png">
+                    <p>Location</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__border"></div>
+        <div class="footer__social">
+            <p class="footer__social-name">
+                digital flow
+            </p>
+            <div>
+                <img class="footer__icon" src="img/Frame%2022.png" alt="icon">
+                <img class="footer__icon" src="img/Frame%2023.png" alt="icon">
+                <img class="footer__icon" src="img/Frame%2024.png" alt="icon">
+                <img class="footer__icon" src="img/Frame%2025.png" alt="icon">
+                <img class="footer__icon" src="img/Frame%2026.png" alt="icon">
+            </div>
+        </div>
+    </section>
+</main>
 
-                </div>
-            </section>
-    </main>
+<script src="javascript/script.js"></script>
 </body>
 </html>
