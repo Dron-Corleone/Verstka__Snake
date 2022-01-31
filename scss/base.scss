@@ -37,6 +37,16 @@ body {
   width: 100%;
   max-width: 900px;
 
+  &__menu-btn {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+
+
   &__snake {
     margin-bottom: 150px;
     padding-left: 270px;
