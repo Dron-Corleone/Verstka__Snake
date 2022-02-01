@@ -432,6 +432,16 @@ body {
   overflow: hidden;
   z-index: 2;
 }
+.head__menu-btn span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.3s;
+  transform: translate(-50%, -50%);
+  background-color: red;
+}
 .head__snake {
   margin-bottom: 150px;
   padding-left: 270px;
@@ -447,6 +457,9 @@ body {
 }
 .head__vector {
   display: flex;
+}
+.head__vector.display {
+  display: none;
 }
 .head__logo {
   margin-top: 26px;

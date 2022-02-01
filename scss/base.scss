@@ -45,7 +45,16 @@ body {
     z-index: 2;
   }
 
-
+  &__menu-btn span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all 0.3s;
+    transform: translate(-50%, -50%);
+    background-color: red;
+  }
 
   &__snake {
     margin-bottom: 150px;
@@ -64,6 +73,10 @@ body {
 
   &__vector {
     display: flex;
+  }
+
+  &__vector.display {
+    display: none;
   }
 
   &__logo {
