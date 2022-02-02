@@ -425,23 +425,6 @@ body {
   width: 100%;
   max-width: 900px;
 }
-.head__menu-btn {
-  width: 30px;
-  height: 30px;
-  position: fixed;
-  overflow: hidden;
-  z-index: 2;
-}
-.head__menu-btn span {
-  width: 30px;
-  height: 2px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transition: all 0.3s;
-  transform: translate(-50%, -50%);
-  background-color: red;
-}
 .head__snake {
   margin-bottom: 150px;
   padding-left: 270px;
@@ -458,7 +441,7 @@ body {
 .head__vector {
   display: flex;
 }
-.head__vector.display {
+.head__display {
   display: none;
 }
 .head__logo {
@@ -487,11 +470,18 @@ body {
   display: flex;
   list-style-type: none;
 }
+.head__list-block {
+  display: block;
+  margin: 100px 0 0 40px;
+}
 .head__link {
   margin-right: 16px;
 }
 .head__link:nth-child(6) {
   margin-right: 0;
+}
+.head__link-block {
+  margin-bottom: 20px;
 }
 .head__item {
   color: black;
@@ -506,9 +496,62 @@ body {
   font-size: 62px;
   text-align: center;
   font-weight: 200;
-  font-family: "Helvetica Neue";
   text-transform: uppercase;
   padding-top: 250px;
+}
+.head__menu-btn {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+  display: none;
+}
+.head__menu-btnRight {
+  display: block;
+  margin-left: 1120px;
+  margin-top: 15px;
+}
+.head__menu-btn span {
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s;
+}
+.head__menu-btn span:nth-of-type(2) {
+  top: calc(50% - 5px);
+}
+.head__menu-btn span:nth-of-type(3) {
+  top: calc(50% + 5px);
+}
+.head__menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+.head__menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0) rotate(45deg);
+}
+.head__menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0) rotate(-45deg);
+}
+.head__menu-right {
+  position: fixed;
+  top: -45px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  transition: 0.4s;
+  background-color: #87e9ff;
+  opacity: 0.8;
+}
+.head__menu.active {
+  transform: translateX(70%);
 }
 
 /*# sourceMappingURL=style.css.map */
